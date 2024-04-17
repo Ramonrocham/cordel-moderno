@@ -42,7 +42,8 @@ header > p{
 }
 
 section{
-    padding: 20px;
+    
+    padding: 40px 20px;
     font-family: var(--fonte3);
     font-size: 2vw;
 }
@@ -68,7 +69,7 @@ section#img01{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: right center;
+    background-position: left center;
 }
 section#img02{
     background-image: url(imagem/fundo002.png);
@@ -80,7 +81,6 @@ section#img02{
 section#img03{
     background-image: url(imagem/fundo003.png);
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right center;
 }
@@ -91,4 +91,9 @@ footer{
     text-align: center;
     padding: 20px;
     height: 50px;
+}
+@media(max-width:700px){
+    section > p{
+        font-size: 3.5vw;
+    }
 }
