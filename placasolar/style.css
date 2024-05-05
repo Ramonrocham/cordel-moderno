@@ -1,40 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Overpass", sans-serif;
+}
+body{
+    background-color: #0b71a3;
 }
 header{
     background-color: #0b71a3;
-    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    color: white;
+    border-bottom: 2px solid lightgray;
 }
-div{
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
+header div{
+    display: flex;
+    align-items: center;
 }
-h1{
-    transition-duration: 0.5ms;
-    font-size: 4em;
+header img{
+    margin-right: 20px;
+    height: 100px;
+}
+header h1{
+    line-height: 0.5em;
+    font-size: 3em;
+    color: yellow;
+}
+header h1 a{
+    font-size: 0.4em;
+    color: white;
+}
+header nav li{
     display: inline-block;
-    text-align: center;
-    margin-top: 25px;
-    padding: 10px;
-    text-shadow: 2px 3px 3px #00000048;
+    padding: 0px 15px;
 }
-h1 > a#ino{
-    padding: 10px 28px 10px 10px ;
-    border-radius: 0px 0px 0px 30px;
-    background-color: #f5db18;
-    color: #3714DB;
+header nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 8px 13px;
 }
-h1 > a#watt{
-    color: #f5db18;
-    padding: 11px 25px 11px 5px;
-    margin-left: -24px;
-    border-radius: 30px 30px 0px 30px;
-    background-color: blue;
+header nav li a:hover{
+    text-decoration: underline;
+    color: yellow;
 }
-h1:hover{
-    font-size: 4.3em;
-    transition-duration: 0.5s;
+main{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+main section#sc1{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+main section div#texto1{
+    max-width: 400px;
+}
+main section#sc1 form{
+    width: 800px;
+
 }
