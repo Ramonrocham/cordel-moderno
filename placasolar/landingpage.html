@@ -27,14 +27,23 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, nobis commodi nisi odit soluta quisquam ipsa omnis beatae molestiae esse aperiam placeat, deleniti ducimus quo sunt blanditiis deserunt ullam quaerat.</p>
             </div>
             <form action="https://api.staticforms.xyz/submit" method="post">
-                    <Label>Nome</Label>
-                    <input type="text" name="nome" id="nome" placeholder="nome">
-                    <label>Email</label>
-                    <input type="email" name="email" id="email" placeholder="email@email.com">
-                    <label>Telefone</label>
-                    <input type="text" name="telefone" id="telefone" placeholder="00 000000000">
-                    <label>Cidade</label>
-                    <input type="text" name="cidade" id="cidade" placeholder="cidade">
+                    <div>
+                        <Label>Nome</Label>
+                        <input type="text" name="name" id="nome" placeholder="nome" autocomplete="off" required>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" placeholder="email@email.com" >
+                    </div>
+                    <div>
+                        <label>Telefone</label>
+                        <input type="text" name="phone" id="telefone" placeholder="00 000000000" required>
+                    </div>
+                    <div>
+
+                        <label>Cidade</label>
+                        <input type="text" name="city" id="cidade" placeholder="cidade" required>
+                    </div>
                     <button type="submit">Enviar</button>
 
                     <input type="hidden" name="accessKey" value="0feb1f70-3f21-41f2-8cac-9707518f029e">
